@@ -5,7 +5,7 @@
 $(document).ready(function () {
     var menu = $('#menu');
     var origOffsetY = menu.offset().top;
-    
+
     function scroll() {
         if ($(window).scrollTop() >= origOffsetY) {
             $('#menu').addClass('navbar-fixed-top');
@@ -15,6 +15,6 @@ $(document).ready(function () {
             $('#menu').removeClass('menu-fixed-style');
         }
     }
-    
+
     document.onscroll = scroll;
 });
