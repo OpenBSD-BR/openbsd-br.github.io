@@ -11,7 +11,7 @@ details:
     <tr>
         <td>Logo do OpenBSD</td>
         <td>
-            <a href="http://www.openbsd-br.org/artwork/1200px-OpenBSD_Logo_-_Cartoon_Puffy_with_textual_logo_below.svg.png">
+            <a href="https://openbsd-br.org/artwork/1200px-OpenBSD_Logo_-_Cartoon_Puffy_with_textual_logo_below.svg.png">
                 <img src="/artwork/1200px-OpenBSD_Logo_-_Cartoon_Puffy_with_textual_logo_below.svg.png" align="left" height="100" width="100" >
             </a>
         </td>
@@ -28,7 +28,7 @@ details:
             </a>
         </td>
         <td>Versão 7.0<br>
-            <a href="http://www.openbsd.org/images/StarryPointers.png">
+            <a href="https://www.openbsd.org/images/StarryPointers.png">
                 <img src="/artwork/70_StarryPointers-s.png" align="left" height="100" width="100" >
             </a>
         </td>
@@ -43,12 +43,12 @@ details:
             </a>
         </td>
         <td>Versão 6.7<br>
-            <a href="http://www.openbsd.org/images/CoralFever.gif">
+            <a href="https://www.openbsd.org/images/CoralFever.gif">
                 <img src="/artwork/CoralFever-67.gif" align="left" height="100" width="100" >
             </a>
         </td>
         <td>Versão 6.6<br>
-            <a href="http://www.openbsd.org/images/sixdotsix.gif">
+            <a href="https://www.openbsd.org/images/sixdotsix.gif">
                 <img src="/artwork/sixdotsix.gif" align="left" height="100" width="100" >
             </a>
         </td>
@@ -58,7 +58,7 @@ details:
             </a>
         </td>
         <td>Versão 6.4</br>
-            <a href="http://www.openbsd-br.org/artwork/puffoil-64.jpg">
+            <a href="https://openbsd-br.org/artwork/puffoil-64.jpg">
                 <img src="/artwork/puffoil-64.jpg" align="left" height="100" width="100" >
             </a>
         </td>
