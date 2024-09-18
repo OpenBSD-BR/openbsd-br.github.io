@@ -57,7 +57,7 @@ details:
                 <img src="/artwork/puffystock-65.gif" height="100" width="100" alt="Logo da versão 6.5 do OpenBSD">
             </a>
         </td>
-        <td>Versão 6.4</br>
+        <td>Versão 6.4<br>
             <a href="https://openbsd-br.org/artwork/puffoil-64.jpg">
                 <img src="/artwork/puffoil-64.jpg" height="100" width="100" alt="Logo da versão 6.4 do OpenBSD">
             </a>
