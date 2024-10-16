@@ -19,7 +19,10 @@ Faça um Fork do Repositório 🍴
 Faça Suas Alterações 🔧
 Envie um Pull Request 🔄
 Mantenha-se Conectado 🌐
-Site:[ openbsd-br.github.io](https://openbsd-br.org/)
+Site:[ openbsd-br.github.io]
+IRC:Venha bater um papo conosco no canal [#openbsd-br] na FreeNode.
+Twitter:[https://x.com/openbsd_br]
+facebook:[https://www.facebook.com/openbsdbrasil/]
 Chat: Junte-se a nós em nossos canais do Discord ou Telegram!
 Siga-nos: Fique por dentro das nossas redes sociais! 🐦📸
 Obrigado pelo seu interesse e apoio! Vamos fazer o OpenBSD brilhar no Brasil! 🇧🇷✨
