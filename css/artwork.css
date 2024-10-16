@@ -1,0 +1,101 @@
+/* Resetando alguns estilos padrão do navegador */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+    text-align: center;
+    margin: 60px 0 20px;
+    font-weight: 700;
+}
+
+.logo-table, .version-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.logo-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(25% - 30px);
+    box-sizing: border-box;
+}
+
+.logo-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.logo-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-item strong {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Design Responsivo */
+@media (max-width: 1024px) {
+    .logo-item {
+        flex: 1 1 calc(33.333% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-item {
+        flex: 1 1 calc(50% - 30px);
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-item {
+        flex: 1 1 calc(100% - 30px);
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
