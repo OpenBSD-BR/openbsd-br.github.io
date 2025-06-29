@@ -1,17 +1,4 @@
-/* Resetando alguns estilos padrão do navegador */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
+/* Artwork page specific styles */
 
 h1 {
     text-align: center;
