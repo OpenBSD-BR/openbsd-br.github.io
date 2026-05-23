@@ -2,219 +2,144 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Brazilian OpenBSD Users Group">
+    <meta name="description" content="Grupo Brasileiro dos Usuários de OpenBSD">
     <meta name="copyright" content="https://opensource.org/licenses/BSD-2-Clause">
-    <link rel="shortcut icon" href="img/favicon.ico" TYPE="image/x-icon">
+    <meta name="theme-color" content="#0e0f10">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="canonical" href="https://openbsd-br.org/">
-
-    <title>OpenBSD-BR.org (Grupo Brasileiro dos Usuários de OpenBSD)</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <link href="css/jumbotron-narrow.css" rel="stylesheet">
-    <link href="css/openbsd-br.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/openbsd-br.js"></script>
+    <link rel="preload" href="fonts/jetbrains-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/openbsd-br.css">
+    <title>openbsd-br.org — Comunidade OpenBSD Brasil</title>
 </head>
-
 <body>
-<header>
-    <a href="https://github.com/OpenBSD-BR/openbsd-br.github.io">
-        <img style="position: absolute; top: 0; right: 0; border: 0;"
-             src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png"
-             alt="Fork me on GitHub"
-        >
-    </a>
 
-    <div class="container-fluid" id="top-black">
-        <div class="twitter-div-top-left">
-            <a href="https://twitter.com/openbsd_br" class="twitter-follow-button" data-show-count="true" data-size="large" data-dnt="true">
-                Seguir @openbsd_br
-            </a>
-        </div>
-
-        <div class="container" id="openbsd-br-social-icons">
-            <a href="https://github.com/OpenBSD-BR/openbsd-br.org" class="btn btn-social-icon btn-lg btn-github" target="_blank">
-                <i class="fa fa-github fa-lg"></i>
-            </a>
-
-            <a href="https://www.facebook.com/openbsdbrasil/" class="btn btn-social-icon btn-lg btn-facebook" target="_blank">
-                <i class="fa fa-facebook fa-lg"></i>
-            </a>
-
-            <a href="https://twitter.com/openbsd_br" class="btn btn-social-icon btn-lg btn-twitter" target="_blank">
-                <i class="fa fa-twitter fa-lg"></i>
-            </a>
-        </div>
-    </div>
-
-    <div class="brazil-line"></div>
-</header>
-<div class="container">
-    <div class="header clearfix" id="menu">
-        <nav>
-            <ul class="nav nav-pills pull-right">
-                <li role="presentation" class="active"><a href="/">Inicial</a></li>
-                <li role="presentation"><a href="#download">Download</a></li>
-                <li role="presentation"><a href="https://www.openbsd.org/mail.html">Lista de Email Oficial</a></li>
-                <li role="presentation"><a href="https://web.libera.chat/#openbsd-br" target="_blank">IRC</a></li>
-                <li role="presentation"><a href="artwork.html">Artwork</a></li>
-                <li role="presentation"><a href="https://openbsd.org" target="_blank">Site Oficial</a></li>
-            </ul>
+<header class="site-header">
+    <div class="wrap">
+        <a class="wordmark" href="/">openbsd-br<span class="dot">.</span>org</a>
+        <nav class="site-nav" aria-label="Principal">
+            <a href="/" aria-current="page">inicial</a>
+            <a href="#download">download</a>
+            <a href="https://web.libera.chat/#openbsd-br" target="_blank" rel="noopener">irc</a>
+            <a href="artwork.html">artwork</a>
+            <a href="https://openbsd.org" target="_blank" rel="noopener">oficial</a>
         </nav>
-        <h3 class="text-muted">
-            <a href="/">
-                <img src="img/openbsd.png" alt="OpenBSD Brasil"/>
-            </a>
-        </h3>
     </div>
-    <div class="brazil-line"></div>
+</header>
 
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="text-center">Comunidade OpenBSD Brasil</h2>
+<div class="flag" aria-hidden="true"></div>
+
+<main>
+    <section class="hero">
+        <div class="wrap">
+            <h1>Comunidade OpenBSD Brasil</h1>
+            <p>Grupo brasileiro dos usuários do sistema operacional OpenBSD.</p>
         </div>
-    </div>
+    </section>
 
-    <div id="content">
-        <div class="text-center" style="margin-bottom: 20px;">
-            <img src="img/puffy79.gif" alt="Versão estável 7.9"/>
-        </div>
-
-        <div class="jumbotron">
-            <p class="text-justify">
+    <section class="section">
+        <div class="wrap">
+            <p>
                 O Projeto OpenBSD oferece, como carro chefe, um sistema operacional
-                multi-plataforma, gratuito e de código aberto baseado no BSD Unix, da Universidade de
-                Berkeley.
+                multi-plataforma, gratuito e de código aberto baseado no BSD Unix,
+                da Universidade de Berkeley.
             </p>
-
-            <p class="text-justify">
-                A primeira versão do sistema operacional OpenBSD data do inicio do ano de
-                1995 e iniciou como um fork do NetBSD; outro sistema operacional da mesma linhagem do Unix de Berkeley.
-                Dentre alguns dos esforços desempenhados pelo projeto, vemos segurança, simplicidade e
-                portabilidade.
+            <p>
+                A primeira versão do sistema operacional OpenBSD data do inicio do
+                ano de 1995 e iniciou como um fork do NetBSD; outro sistema
+                operacional da mesma linhagem do Unix de Berkeley. Dentre alguns
+                dos esforços desempenhados pelo projeto, vemos segurança,
+                simplicidade e portabilidade.
             </p>
-
-            <p class="text-justify">
-                Outros projetos também são hospedados e mantidos pelos desenvolvedores do OpenBSD:
-                <a href="https://www.openssh.com" target="_blank">OpenSSH</a>,
-                <a href="https://www.openbgpd.org" target="_blank">OpenBGPD</a>,
-                <a href="https://www.rpki-client.org" target="_blank">rpki-client</a>,
-                <a href="https://www.openntpd.org" target="_blank">OpenNTPD</a>,
-                <a href="https://www.opensmtpd.org" target="_blank">OpenSMTPD</a>,
-                <a href="https://www.openiked.org" target="_blank">OpenIKED</a>,
-                <a href="https://mandoc.bsd.lv" target="_blank">mandoc</a>,
-                <a href="https://www.libressl.org" target="_blank">LibreSSL</a>
+            <p>
+                Outros projetos também são hospedados e mantidos pelos
+                desenvolvedores do OpenBSD:
+                <a class="ext" href="https://www.openssh.com" target="_blank" rel="noopener">OpenSSH</a>,
+                <a class="ext" href="https://www.openbgpd.org" target="_blank" rel="noopener">OpenBGPD</a>,
+                <a class="ext" href="https://www.rpki-client.org" target="_blank" rel="noopener">rpki-client</a>,
+                <a class="ext" href="https://www.openntpd.org" target="_blank" rel="noopener">OpenNTPD</a>,
+                <a class="ext" href="https://www.opensmtpd.org" target="_blank" rel="noopener">OpenSMTPD</a>,
+                <a class="ext" href="https://www.openiked.org" target="_blank" rel="noopener">OpenIKED</a>,
+                <a class="ext" href="https://mandoc.bsd.lv" target="_blank" rel="noopener">mandoc</a>,
+                <a class="ext" href="https://www.libressl.org" target="_blank" rel="noopener">LibreSSL</a>.
             </p>
         </div>
+    </section>
 
-        <div class="row">
-            <hr/>
-            <div class="col-lg-12">
-                <h2 class="text-center">
-                    <a id="download"></a>
-                    <strong>Obtenha o OpenBSD através de um servidor no Brasil.</strong>
-                </h2>
-                <br/>
-                <p class="text-center">
-                    <a class="btn-lg btn-info" href="https://cdn.openbsd.org/pub/OpenBSD" role="button">OpenBSD (CDN)</a>
-                    <a class="btn-lg btn-info" href="https://cloudflare.cdn.openbsd.org/pub/OpenBSD/" role="button">Cloudflare (CDN)</a>
-                    <a class="btn-lg btn-info" href="https://openbsd.c3sl.ufpr.br/pub/OpenBSD/" role="button">UFPR (Curitiba)</a>
-                </p>
-                <br/>
-                <p class="text-center">
-                    <a href="https://twitter.com/openbsd_br" class="twitter-follow-button" data-show-count="true" data-size="large" data-dnt="true">
-                        Follow @openbsd_br
-                    </a>
-                    <script>
-                        !function (d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + '://platform.twitter.com/widgets.js';
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, 'script', 'twitter-wjs');
-                    </script>
-                </p>
-                <hr/>
-            </div>
+    <section class="section" aria-label="Versão estável">
+        <div class="wrap">
+            <article class="release">
+                <img src="img/puffy79.gif" alt="Puffy — mascote da versão estável OpenBSD 7.9" width="120">
+                <div class="release-meta">
+                    <div class="release-title">OpenBSD 7.9</div>
+                    <div class="release-tag"><span class="tag">stable</span> versão estável atual</div>
+                    <pre><span class="prompt">$</span> doas pkg_add -u</pre>
+                </div>
+            </article>
         </div>
+    </section>
 
-        <div class="row marketing">
-            <div class="col-lg-12">
-                <h4>IRC</h4>
-                <p>
-                    Venha bater um papo conosco no canal
-                    <a href="https://web.libera.chat/#openbsd-br" target="_blank">#openbsd-br</a>
-                    na Libera.chat.
-                </p>
-
-                <h4>GitHub</h4>
-                <p>
-                    Colabore com este site ou algum projeto OpenBSD. Visite nosso
-                    <a href="https://github.com/openbsd-br/">Github</a>.
-                </p>
-
-                <h4>Lista de Discussão</h4>
-                <p>
-                    Temos uma lista de discussão para atender a comunidade Brasileira. Para maiores
-                    informações <a href="https://openbsd-br.org/mailman/listinfo/lista">clique aqui.</a>
-                </p>
-
-                <h4>Servidores Espelho</h4>
-                <p>
-                    Deseja ser um mirror no Brasil? <a href="#">Clique aqui</a> para maiores informações.
-                </p>
-            </div>
+    <section class="section" id="download">
+        <div class="wrap">
+            <h2>download</h2>
+            <p>Obtenha o OpenBSD através de um servidor no Brasil ou pelo CDN oficial.</p>
+            <dl class="mirrors">
+                <dt>cdn</dt>
+                <dd><a class="ext" href="https://cdn.openbsd.org/pub/OpenBSD" target="_blank" rel="noopener">cdn.openbsd.org/pub/OpenBSD</a></dd>
+                <dt>cdn</dt>
+                <dd><a class="ext" href="https://cloudflare.cdn.openbsd.org/pub/OpenBSD/" target="_blank" rel="noopener">cloudflare.cdn.openbsd.org/pub/OpenBSD</a></dd>
+                <dt>br</dt>
+                <dd><a class="ext" href="https://openbsd.c3sl.ufpr.br/pub/OpenBSD/" target="_blank" rel="noopener">openbsd.c3sl.ufpr.br/pub/OpenBSD</a> — UFPR, Curitiba</dd>
+            </dl>
         </div>
-    </div> <!-- div content -->
-</div> <!-- /container -->
+    </section>
 
-<div class="brazil-line"></div>
+    <section class="section">
+        <div class="wrap">
+            <h2>comunidade</h2>
 
-<footer class="footer-div text-center container-fluid">
-    <div class="row">
-        <div class="container" id="footer-container">
-            <div class="col-md-8">
-                <p>
-                    <strong>OpenBSD:</strong>
-                    "Apenas duas falhas na instalação padrão depois de
-                    um diabólico período de tempo."
-                </p>
+            <h3>irc</h3>
+            <p>
+                Venha bater um papo conosco no canal
+                <a class="ext" href="https://web.libera.chat/#openbsd-br" target="_blank" rel="noopener">#openbsd-br</a>
+                na Libera.chat.
+            </p>
 
-                <p>
-                    <strong>Comunidade OpenBSD Brasil</strong>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <a href="https://github.com/OpenBSD-BR/openbsd-br.org" class="btn btn-social-icon btn-lg btn-github" target="_blank">
-                    <i class="fa fa-github fa-2x"></i>
-                </a>
+            <h3>github</h3>
+            <p>
+                Colabore com este site ou algum projeto OpenBSD. Visite nosso
+                <a class="ext" href="https://github.com/openbsd-br/" target="_blank" rel="noopener">GitHub</a>.
+            </p>
 
-                <a href="https://www.facebook.com/openbsdbrasil/" class="btn btn-social-icon btn-lg btn-facebook" target="_blank">
-                    <i class="fa fa-facebook fa-2x"></i>
-                </a>
+            <h3>lista de discussão</h3>
+            <p>
+                Temos uma lista de discussão para atender a comunidade brasileira.
+                Para maiores informações
+                <a href="https://openbsd-br.org/mailman/listinfo/lista">clique aqui</a>.
+            </p>
 
-                <a href="https://twitter.com/openbsd_br" class="btn btn-social-icon btn-lg btn-twitter" target="_blank">
-                    <i class="fa fa-twitter fa-2x"></i>
-                </a>
-            </div>
+            <h3>servidores espelho</h3>
+            <p>
+                Deseja ser um mirror no Brasil?
+                <a href="https://github.com/openbsd-br/">Entre em contato pelo GitHub</a>
+                para maiores informações.
+            </p>
+        </div>
+    </section>
+</main>
+
+<div class="flag" aria-hidden="true"></div>
+
+<footer class="site-footer">
+    <div class="wrap">
+        <div>Comunidade OpenBSD Brasil — “Apenas duas falhas na instalação padrão depois de um diabólico período de tempo.”</div>
+        <div class="links">
+            <a href="https://github.com/openbsd-br/" target="_blank" rel="noopener">github</a>
+            <a href="https://www.facebook.com/openbsdbrasil/" target="_blank" rel="noopener">facebook</a>
+            <a href="https://twitter.com/openbsd_br" target="_blank" rel="noopener">twitter</a>
         </div>
     </div>
 </footer>
 
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
