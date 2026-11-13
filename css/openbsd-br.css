@@ -440,6 +440,8 @@ a.ext::after { content: " ↗"; font-size: 0.8em; opacity: 0.6; }
     color: var(--fg-muted);
 }
 
+.card p a { position: relative; z-index: 1; }
+
 .card a.stretch::before {
     content: "";
     position: absolute;
@@ -515,6 +517,14 @@ a.ext::after { content: " ↗"; font-size: 0.8em; opacity: 0.6; }
 
 .release pre .prompt { color: var(--yellow); user-select: none; }
 
+.release-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
 @media (max-width: 640px) {
     .release {
         grid-template-columns: 1fr;
@@ -522,6 +532,7 @@ a.ext::after { content: " ↗"; font-size: 0.8em; opacity: 0.6; }
         padding: 32px 24px;
     }
     .release img { margin: 0 auto; }
+    .release-links { justify-content: center; }
 }
 
 /* ---------- Mirrors ---------- */
